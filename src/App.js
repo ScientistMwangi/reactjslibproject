@@ -6,7 +6,7 @@ import Counters from "./components/counters";
 
 class App extends Component {
   //constructor called once once the instance of class is created
-
+  //===========COMPONENTS LIFE CYCLE they are very specific to the class//state less functions cant use them============
   //###### MOUNT PHASE
   constructor() {
     super();
