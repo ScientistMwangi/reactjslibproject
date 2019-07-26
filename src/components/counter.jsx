@@ -8,7 +8,11 @@ class Counter extends Component {
   //   }
 
   componentDidMount() {
-    console.log(this.props);
+    //console.log(this.props);
+  }
+  //### UNMOUNT PHASE
+  componentWillUnmount() {
+    console.log("conponent-unmount");
   }
 
   state = {
@@ -96,7 +100,7 @@ class Counter extends Component {
     //wont work you have to notify the state of the changes
     //this.state.count++;
     //console.log("Increment fxn", this);
-    console.log(myparam + " name: " + name);
+    //console.log(myparam + " name: " + name);
     this.setState({ count: this.props.value + 1 });
   };
 }

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+/* import React, { Component } from "react";
 class Navbar extends Component {
   state = {};
   render() {
@@ -8,7 +9,7 @@ class Navbar extends Component {
           <a className="navbar-brand" href="#">
             Navbar
             <span className="badge badge-pill badge-secondary">
-              1{this.props.totalCounters}
+              {this.props.totalCount}
             </span>
           </a>
         </nav>
@@ -16,5 +17,23 @@ class Navbar extends Component {
     );
   }
 }
+
+export default Navbar;
+ */
+
+const Navbar = props => {
+  return (
+    <React.Fragment>
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          Navbar
+          <span className="badge badge-pill badge-secondary">
+            {props.totalCount}
+          </span>
+        </a>
+      </nav>
+    </React.Fragment>
+  );
+};
 
 export default Navbar;
